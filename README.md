@@ -13,4 +13,12 @@ Intermediate setup steps: https://github.com/CTSRD-CHERI/cheribuild
 cheribuild.py llvm
 ```
 
-
+### Types of compiling modes for CHERi 
+```
+- cheribsd-morello-aarch64-for-hybrid-rootfs.cfg
+- cheribsd-morello-aarch64-for-purecap-rootfs.cfg
+- cheribsd-morello-hybrid.cfg
+- cheribsd-morello-hybrid-for-purecap-rootfs.cfg
+- cheribsd-morello-purecap.cfg
+- cheribsd-morello-purecap-for-hybrid-rootfs.cfg
+```
