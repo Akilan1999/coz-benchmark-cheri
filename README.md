@@ -1,4 +1,6 @@
 # Coz Profiler CHERI
+(Work in progress)
+
 This repo consists of porting the Coz profiler for the CHERI 
 architecture. 
 
