@@ -40,6 +40,8 @@
 
 #include "coz.h"
 
+#include "prof.h"
+
 #define DEF_NUM_POINTS 100000
 #define DEF_NUM_MEANS 100
 #define DEF_DIM 3
@@ -261,6 +263,8 @@ int main(int argc, char **argv)
    int num_per_thread, excess; 
    
    parse_args(argc, argv);   
+
+   PROF_START();
    
    points = (int **)malloc(sizeof(int *) * num_points);
    for (i=0; i<num_points; i++) 
@@ -361,6 +365,8 @@ int main(int argc, char **argv)
    }
    free(means);
    free(clusters);
+
+   PROF_STDOUT();
 
    return 0;
 }
