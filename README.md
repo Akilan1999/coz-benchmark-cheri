@@ -24,3 +24,12 @@ cheribuild.py llvm
 - cheribsd-morello-purecap.cfg
 - cheribsd-morello-purecap-for-hybrid-rootfs.cfg
 ```
+
+## Benchmark ported 
+There are 4 benchmarks ported:
+
+- ### Histogram 
+- ### Kmeans 
+- ### Linear Regression 
+- ### Matrix Multiple 
+
