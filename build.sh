@@ -1,3 +1,5 @@
+mkdir bin
+
 cd histogram/
 sh build.sh /home/akilan/cheri/output/morello-sdk/bin/clang
 cd ..
