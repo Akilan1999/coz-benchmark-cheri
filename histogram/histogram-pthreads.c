@@ -39,7 +39,7 @@
 
 #include "stddefines.h"
 
-#include "coz.h"
+// #include "coz.h"
 
 #define IMG_DATA_OFFSET_POS 10
 #define BITS_PER_PIXEL_POS 28
@@ -126,7 +126,7 @@ void *calc_hist(void *arg) {
       val = &(thread_arg->data[i+2]);
       red[*val]++;   
 			
-			COZ_PROGRESS;
+			// COZ_PROGRESS;
    }
    /*
    thread_arg->red = red;
@@ -257,7 +257,7 @@ int main(int argc, char *argv[]) {
       dprintf("%d - %d\n", i, green[i]);        
    }
    
-   dprintf("\n\nRed\n","");
+   dprintf("\n\nRed\n",");
    dprintf("----------\n\n");
    for (i = 0; i < 256; i++) {
       dprintf("%d - %d\n", i, red[i]);        
