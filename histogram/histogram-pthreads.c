@@ -245,19 +245,19 @@ int main(int argc, char *argv[]) {
       }
    }
 
-   dprintf("\n\nBlue\n");
+   dprintf("\n\nBlue\n","");
    dprintf("----------\n\n");
    for (i = 0; i < 256; i++) {
       dprintf("%d - %d\n", i, blue[i]);        
    }
 
-   dprintf("\n\nGreen\n");
+   dprintf("\n\nGreen\n","");
    dprintf("----------\n\n");
    for (i = 0; i < 256; i++) {
       dprintf("%d - %d\n", i, green[i]);        
    }
    
-   dprintf("\n\nRed\n");
+   dprintf("\n\nRed\n","");
    dprintf("----------\n\n");
    for (i = 0; i < 256; i++) {
       dprintf("%d - %d\n", i, red[i]);        
