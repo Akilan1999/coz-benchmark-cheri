@@ -58,22 +58,22 @@ typedef struct {
 /* test_endianess
  *
  */
-void test_endianess() {
-   unsigned int num = 0x12345678;
-   char *low = (char *)(&(num));
-   if (*low ==  0x78) {
-      dprintf("No need to swap\n");
-      swap = 0;
-   }
-   else if (*low == 0x12) {
-      dprintf("Need to swap\n");
-      swap = 1;
-   }
-   else {
-      printf("Error: Invalid value found in memory\n");
-      exit(1);
-   } 
-}
+// void test_endianess() {
+//    unsigned int num = 0x12345678;
+//    char *low = (char *)(&(num));
+//    if (*low ==  0x78) {
+//       dprintf("No need to swap\n");
+//       swap = 0;
+//    }
+//    else if (*low == 0x12) {
+//       dprintf("Need to swap\n");
+//       swap = 1;
+//    }
+//    else {
+//       printf("Error: Invalid value found in memory\n");
+//       exit(1);
+//    } 
+// }
 
 /* swap_bytes
  *
