@@ -160,13 +160,13 @@
 mkdir results
 for f in *.out; do
   # Cache count L1D
-  pmcstat -d -w 10 -p L1D_CACHE ./"$f" > results/"$f".L1DCache
+  pmcstat -d -w 10 -p L1D_CACHE ./"$f" >> results/"$f".L1DCache
  # Cache count L2D
-  pmcstat -d -w 10 -p L2D_CACHE ./"$f" > results/"$f".L2DCache
+  pmcstat -d -w 10 -p L2D_CACHE ./"$f" >> results/"$f".L2DCache
   # Wall Clock run time
   time ./"$f" > results/"$f".time
   # CPU Cycles
-  pmcstat -d -w 10 -p CPU_CYCLES ./"$f" > results/"$f".CPU_CYCLES
+  pmcstat -d -w 10 -p CPU_CYCLES ./"$f" >> results/"$f".CPU_CYCLES
   # Capability memory access read
-  pmcstat -d -w 10 -p CAP_MEM_ACCESS_RD ./"$f" > results/"$f".CAP_MEM_ACCESS_RD
+  pmcstat -d -w 10 -p CAP_MEM_ACCESS_RD ./"$f" >> results/"$f".CAP_MEM_ACCESS_RD
 done

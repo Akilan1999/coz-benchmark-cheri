@@ -270,18 +270,18 @@ int main(int argc, char *argv[]) {
 
     printf("MatrixMult_pthreads: Calling MapReduce Scheduler Matrix Multiplication\n");
 
-	gettimeofday(&starttime,0);
+	// gettimeofday(&starttime,0);
     
     matrixmult_splitter(&mm_data);
     
 
-    gettimeofday(&endtime,0);
+    // gettimeofday(&endtime,0);
     
-    size_t start_usec = starttime.tv_sec * 1000000 + starttime.tv_usec;
-    size_t end_usec = endtime.tv_sec * 1000000 + endtime.tv_usec;
-    float usec = end_usec - start_usec;
+    // size_t start_usec = starttime.tv_sec * 1000000 + starttime.tv_usec;
+    // size_t end_usec = endtime.tv_sec * 1000000 + endtime.tv_usec;
+    // float usec = end_usec - start_usec;
 
-    fprintf(stderr, "runtime = %f\n", (usec / 1000000));
+    // fprintf(stderr, "runtime = %f\n", (usec / 1000000));
 
     for(i=0;i<matrix_len*matrix_len;i++)
     {
