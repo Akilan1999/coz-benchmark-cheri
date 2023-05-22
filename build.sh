@@ -18,3 +18,6 @@ cd ..
 cd matrix_multiply/
 sh build.sh $1
 cd ..
+
+# Copy benchmark to bin/ folder 
+cp benchmark.sh bin/benchmark.sh
